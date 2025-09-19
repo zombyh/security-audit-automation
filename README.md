@@ -13,9 +13,9 @@ Fornecer uma solução prática e de baixo custo para pequenas organizações re
 - Coleta de logs de eventos do sistema
 
 ## 📂 Estrutura
-- `windows/` → Scripts para Windows (PowerShell)
-- `linux/` → Scripts para Linux (Bash)
-- `docs/` → Documentação detalhada
+- `Windows/` → Scripts para Windows (PowerShell)
+- `Linux/` → Scripts para Linux (Bash)
+- `Docs/` → Documentação detalhada
 
 ## 🛠 Pré-requisitos
 - **Windows**: PowerShell 5+ (nativo) ou PowerShell 7
