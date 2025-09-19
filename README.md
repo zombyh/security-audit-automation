@@ -26,3 +26,6 @@ Fornecer uma solução prática e de baixo custo para pequenas organizações re
 Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/security-audit-automation.git
+cd security-audit-automation/linux
+chmod +x *.sh
+bash nome_do_script.sh
