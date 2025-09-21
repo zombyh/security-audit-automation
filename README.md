@@ -24,8 +24,13 @@ Fornecer uma solução prática e de baixo custo para pequenas organizações re
 
 ## 📦 Como usar
 Clone o repositório:
+No Windows:
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+No Linux
 ```bash
 git clone https://github.com/seu-usuario/security-audit-automation.git
 cd security-audit-automation/linux
 chmod +x *.sh
 bash nome_do_script.sh
+
