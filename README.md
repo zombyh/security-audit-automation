@@ -24,7 +24,7 @@ Fornecer uma solução prática e de baixo custo para pequenas organizações re
 
 ## 📦 Como usar
 
-No Windows pode ser necessario liberar a execução dos scripts:
+No Windows pode ser necessário liberar a execução dos scripts:
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
