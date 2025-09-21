@@ -32,8 +32,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 No Linux execute os comandos a seguir:
 
 ```bash
-git clone https://github.com/seu-usuario/security-audit-automation.git
-cd security-audit-automation/linux
+git clone https://github.com/zombyh/security-audit-automation.git
+cd security-audit-automation/Linux
 chmod +x *.sh
 bash nome_do_script.sh
 
