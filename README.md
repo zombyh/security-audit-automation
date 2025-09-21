@@ -23,12 +23,15 @@ Fornecer uma solução prática e de baixo custo para pequenas organizações re
 - Permissões administrativas para execução de alguns scripts
 
 ## 📦 Como usar
-Clone o repositório:
+
 No Windows:
+Pode ser necessario liberar a execução dos scripts:
+
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
-No Linux
+No Linux:
+
 ```bash
 git clone https://github.com/seu-usuario/security-audit-automation.git
 cd security-audit-automation/linux
