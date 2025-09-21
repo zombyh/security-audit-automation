@@ -24,13 +24,12 @@ Fornecer uma solução prática e de baixo custo para pequenas organizações re
 
 ## 📦 Como usar
 
-No Windows:
-Pode ser necessario liberar a execução dos scripts:
+No Windows pode ser necessario liberar a execução dos scripts:
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
-No Linux:
+No Linux execute os comandos a seguir:
 
 ```bash
 git clone https://github.com/seu-usuario/security-audit-automation.git
