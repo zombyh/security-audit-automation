@@ -27,6 +27,7 @@ Clone o repositório:
 No Windows:
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
 No Linux
 ```bash
 git clone https://github.com/seu-usuario/security-audit-automation.git
