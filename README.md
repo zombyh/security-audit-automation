@@ -33,7 +33,7 @@ Pequenas empresas e profissionais de TI que precisam de uma solução **simples,
 Clone o repositório e dê permissão de execução:
 
 ```bash
-git clone git@github.com:zombyh/security-audit-automation.git
+git clone https://github.com/zombyh/security-audit-automation.git
 cd security-audit-automation/Linux
 chmod +x audit-linux.sh
 ./audit-linux.sh
@@ -41,12 +41,17 @@ chmod +x audit-linux.sh
 
 ### 🔹 Windows
 
-No PowerShell:
+No PowerShell como administrador:
 
 ```powershell
-git clone git@github.com:zombyh/security-audit-automation.git
-cd security-audit-automation\Windows
+winget update
+winget install git.git
+cd C:\Users\Seu_usuário\Downloads
+git clone https://github.com/zombyh/security-audit-automation.git
+cd .\security-audit-automation\Windows
+Set-ExecutionPolicy Unrestricted # Libera a execução do script, use com cuidado!
 .\audit-windows.ps1
+Set-ExecutionPolicy Restricted # Bloqueia novamente a execução de scripts por segurança. 
 ```
 
 ---
