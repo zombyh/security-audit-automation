@@ -1,39 +1,85 @@
-# Security Audit Automation
+# 🛡️ Auditoria Fácil
 
-Scripts para automatizar auditorias de segurança em ambientes Windows e Linux utilizando **PowerShell** e **Bash**.
+Ferramenta gratuita de auditoria de sistemas voltada para pequenas empresas e profissionais que precisam de relatórios rápidos e objetivos sobre segurança e conformidade.
 
-## 🚀 Objetivo
-Fornecer uma solução prática e de baixo custo para pequenas organizações realizarem auditorias de segurança de forma rápida, confiável e repetível.
+Este projeto reúne diversos scripts em uma única interface (menu interativo), disponível em duas versões:
 
-## 📋 Funcionalidades
-- Verificação de atualizações do sistema
-- Listagem de usuários ativos
-- Checagem de serviços em execução
-- Identificação de portas abertas
-- Coleta de logs de eventos do sistema
+* **Linux** 🐧
+* **Windows** 🪟
 
-## 📂 Estrutura
-- `Windows/` → Scripts para Windows (PowerShell)
-- `Linux/` → Scripts para Linux (Bash)
-- `Docs/` → Documentação detalhada
+---
 
-## 🛠 Pré-requisitos
-- **Windows**: PowerShell 5+ (nativo) ou PowerShell 7
-- **Linux**: Bash 4+ (nativo)
-- Permissões administrativas para execução de alguns scripts
+## 🚀 Funcionalidades
 
-## 📦 Como usar
+* Menu interativo para escolher o tipo de auditoria.
+* Scripts de verificação automatizados para diferentes áreas, como:
 
-No Windows pode ser necessário liberar a execução dos scripts:
+  * **Usuários e permissões**
+  * **Configurações de rede**
+  * **Serviços ativos**
+  * **Softwares instalados**
+  * **Vulnerabilidades comuns**
+* Geração de relatórios organizados em arquivo de texto.
+* Execução rápida, sem necessidade de configurações complexas.
 
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-No Linux execute os comandos a seguir:
+---
+
+## 🎯 Público-Alvo
+
+Pequenas empresas e profissionais de TI que precisam de uma solução **simples, gratuita e acessível** para realizar auditorias sem depender de ferramentas caras ou complexas.
+
+---
+
+## 📦 Instalação
+
+### 🔹 Linux
+
+Clone o repositório e dê permissão de execução:
 
 ```bash
-git clone https://github.com/zombyh/security-audit-automation.git
-cd security-audit-automation/Linux
-chmod +x *.sh
-bash nome_do_script.sh
+git clone git@github.com:SEU_USUARIO/auditoria-facil.git
+cd auditoria-facil/linux
+chmod +x auditoria.sh
+./auditoria.sh
+```
 
+### 🔹 Windows
+
+No PowerShell:
+
+```powershell
+git clone git@github.com:SEU_USUARIO/auditoria-facil.git
+cd auditoria-facil\windows
+.\auditoria.ps1
+```
+
+---
+
+## 📊 Exemplo de Uso
+
+Ao rodar o script, um menu será exibido:
+
+```
+=== AUDITORIA FÁCIL ===
+1 - Verificar usuários e permissões
+2 - Checar rede e portas abertas
+3 - Listar softwares instalados
+4 - Analisar serviços ativos
+5 - Executar todas as verificações
+0 - Sair
+```
+
+Basta escolher a opção desejada e aguardar a geração do relatório.
+
+---
+
+## 🤝 Contribuições
+
+Sinta-se à vontade para contribuir com melhorias, novos módulos ou otimizações.
+Pull requests são bem-vindos!
+
+---
+
+## 📜 Licença
+
+Este projeto é licenciado sob a [MIT License](LICENSE).
