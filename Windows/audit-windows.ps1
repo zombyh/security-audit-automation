@@ -10,30 +10,30 @@
 do {
     Clear-Host
     Write-Host "====================================="
-    Write-Host "   AUDITORIA DE SEGURANÇA - WINDOWS"
+    Write-Host "   AUDITORIA DE SEGURANCA - WINDOWS"
     Write-Host "====================================="
-    Write-Host "1) Verificar atualizações"
-    Write-Host "2) Listar usuários locais"
-    Write-Host "3) Listar serviços em execução"
+    Write-Host "1) Verificar atualizacoes"
+    Write-Host "2) Listar usuarios locais"
+    Write-Host "3) Listar servicos em execucao"
     Write-Host "4) Verificar portas abertas"
-    Write-Host "5) Analisar logs do sistema (últimos 50 erros)"
+    Write-Host "5) Analisar logs do sistema (ultimos 50 erros)"
     Write-Host "0) Sair"
     Write-Host "====================================="
-    $opt = Read-Host "Escolha uma opção"
+    $opt = Read-Host "Escolha uma opcao"
 
     switch ($opt) {
-        1 { Write-Host "`n[*] Verificando atualizações..."
+        1 { Write-Host "`n[*] Verificando atualizacoes..."
             (Get-HotFix | Sort-Object InstalledOn -Descending | Select-Object -First 10) }
-        2 { Write-Host "`n[*] Usuários locais:"
+        2 { Write-Host "`n[*] Usuarios locais:"
             Get-LocalUser }
-        3 { Write-Host "`n[*] Serviços em execução:"
+        3 { Write-Host "`n[*] Servicos em execucao:"
             Get-Service | Where-Object {$_.Status -eq "Running"} }
         4 { Write-Host "`n[*] Portas abertas:"
             Get-NetTCPConnection -State Listen }
-        5 { Write-Host "`n[*] Últimos 50 erros do log do sistema:"
+        5 { Write-Host "`n[*] Ultimos 50 erros do log do sistema:"
             Get-EventLog -LogName System -EntryType Error -Newest 50 }
         0 { Write-Host "Saindo..." }
-        Default { Write-Host "Opção inválida!" }
+        Default { Write-Host "Opcao invalida!" }
     }
     if ($opt -ne 0) { Pause }
 } while ($opt -ne 0)
