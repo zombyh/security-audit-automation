@@ -9,19 +9,23 @@ Este projeto reúne diversos scripts em uma única interface (menu interativo), 
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
-* Menu interativo para escolher o tipo de auditoria.
-* Scripts de verificação automatizados para diferentes áreas, como:
+### 🔹 Linux
+1. Verificar atualizações disponíveis  
+2. Listar usuários locais  
+3. Listar serviços em execução  
+4. Verificar portas abertas  
+5. Analisar logs do sistema (últimos 50 erros)  
+0. Sair  
 
-  * **Usuários e permissões**
-  * **Configurações de rede**
-  * **Serviços ativos**
-  * **Softwares instalados**
-  * **Vulnerabilidades comuns**
-* Geração de relatórios organizados em arquivo de texto.
-* Execução rápida, sem necessidade de configurações complexas.
-
+### 🔹 Windows
+1. Verificar atualizações  
+2. Listar usuários locais  
+3. Listar serviços em execução  
+4. Verificar portas abertas  
+5. Analisar logs do sistema (últimos 50 erros)  
+0. Sair  
 ---
 
 ## 🎯 Público-Alvo
