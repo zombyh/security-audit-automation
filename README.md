@@ -11,21 +11,13 @@ Este projeto reúne diversos scripts em uma única interface (menu interativo), 
 
 ## Funcionalidades
 
-### 🔹 Linux
 1. Verificar atualizações disponíveis  
 2. Listar usuários locais  
 3. Listar serviços em execução  
 4. Verificar portas abertas  
 5. Analisar logs do sistema (últimos 50 erros)  
-0. Sair  
-
-### 🔹 Windows
-1. Verificar atualizações  
-2. Listar usuários locais  
-3. Listar serviços em execução  
-4. Verificar portas abertas  
-5. Analisar logs do sistema (últimos 50 erros)  
-0. Sair  
+0. Sair
+   
 ---
 
 ## 🎯 Público-Alvo
@@ -41,10 +33,10 @@ Pequenas empresas e profissionais de TI que precisam de uma solução **simples,
 Clone o repositório e dê permissão de execução:
 
 ```bash
-git clone git@github.com:SEU_USUARIO/auditoria-facil.git
-cd auditoria-facil/linux
-chmod +x auditoria.sh
-./auditoria.sh
+git clone git@github.com:zombyh/security-audit-automation.git
+cd security-audit-automation/Linux
+chmod +x audit-linux.sh
+./audit-linux.sh
 ```
 
 ### 🔹 Windows
@@ -52,9 +44,9 @@ chmod +x auditoria.sh
 No PowerShell:
 
 ```powershell
-git clone git@github.com:SEU_USUARIO/auditoria-facil.git
-cd auditoria-facil\windows
-.\auditoria.ps1
+git clone git@github.com:zombyh/security-audit-automation.git
+cd security-audit-automation\Windows
+.\audit-windows.ps1
 ```
 
 ---
