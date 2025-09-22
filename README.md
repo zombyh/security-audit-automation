@@ -57,12 +57,12 @@ Ao rodar o script, um menu será exibido:
 
 ```
 === AUDITORIA FÁCIL ===
-1 - Verificar usuários e permissões
-2 - Checar rede e portas abertas
-3 - Listar softwares instalados
-4 - Analisar serviços ativos
-5 - Executar todas as verificações
-0 - Sair
+1. Verificar atualizações  
+2. Listar usuários locais  
+3. Listar serviços em execução  
+4. Verificar portas abertas  
+5. Analisar logs do sistema (últimos 50 erros)  
+0. Sair  
 ```
 
 Basta escolher a opção desejada e aguardar a geração do relatório.
